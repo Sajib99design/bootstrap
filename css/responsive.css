@@ -1,0 +1,49 @@
+/* @media screen and (min-width: 1400px) and (max-width: 2200px) {
+
+
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+} */
+
+
+/* @media screen and (min-width:1400px) and (max-width:2200px) {
+
+}
+
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+
+} */
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px) {}
+
+
+/*FOR-TABLATE-START*/
+@media screen and (min-width:768px) and (max-width:991px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		font-size: 12px;
+	}
+
+	.btn1 {
+		font-size: 12px;
+	}
+
+}
+
+
+@media screen and (max-width:767px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-bottom: 20px;
+	}
+
+	.btn1 {
+		font-size: 12px;
+		padding: .875rem 1.75rem;
+	}
+}
