@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: "Quicksand", sans-serif;
@@ -35,4 +39,44 @@ body {
     text-decoration: none;
     background: var(--orange);
     color: var(--white);
+}
+
+.hero-title {
+    hr {
+        max-width: 240px;
+        height: 1.5625rem;
+        background: #5e00f5;
+        display: block;
+        margin: 0;
+        opacity: 1;
+        position: relative;
+        bottom: 65px;
+        right: -39%;
+        border-radius: 30px;
+    }
+
+    h2 {
+        font-size: 4.625rem;
+        font-weight: 900;
+        color: var(--black);
+
+        span {
+            color: var(--blue);
+        }
+    }
+
+    p {
+        padding-bottom: 2.25rem;
+    }
+
+}
+
+.hero-btn a {
+    padding-right: 7.375rem !important;
+    display: inline-block;
+}
+
+.nav-hero-wrapper {
+    background: url(img/heroicon.png) no-repeat;
+    background-size: 38% 100%;
 }
