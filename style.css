@@ -9,6 +9,7 @@
     --black2: #333;
     --orange: #FE8C45;
     --white: #FFF;
+    --second: "Quicksand", sans-serif;
 }
 
 * {
@@ -17,7 +18,10 @@
     box-sizing: border-box;
 }
 
-p {
+p,
+h2,
+h2,
+h4 {
     margin: 0;
     padding: 0;
 }
@@ -39,6 +43,19 @@ body {
     text-decoration: none;
     background: var(--orange);
     color: var(--white);
+}
+
+.btn2 {
+    text-decoration: none;
+    background: var(--orange);
+    color: var(--white);
+    padding: .8rem 2.8125rem;
+    display: inline-block;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .hero-title {
@@ -79,4 +96,34 @@ body {
 .nav-hero-wrapper {
     background: url(img/heroicon.png) no-repeat;
     background-size: 38% 100%;
+}
+
+/* about area  */
+.about-area {
+    padding: 4.25rem 0 1.5rem;
+    margin: 10rem 0 5rem;
+    background: rgba(138, 71, 246, .1)
+}
+
+.title {
+    color: var(--black);
+    font-family: var(--second);
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 1.6rem 0;
+}
+
+.title {
+    span {
+        color: var(--blue);
+    }
+}
+
+
+.about-pic {
+    margin-left: -5px;
+}
+
+.about-pic1 {
+    height: 533px;
 }
