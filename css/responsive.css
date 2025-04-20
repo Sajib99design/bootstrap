@@ -260,4 +260,12 @@
 	.testimonial-area {
 		padding: 2.5rem 0;
 	}
+
+	.footer-area {
+		padding: 1.5rem;
+	}
+
+	.footer-social img {
+		width: 2.5rem;
+	}
 }
