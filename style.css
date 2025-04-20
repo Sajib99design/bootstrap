@@ -58,6 +58,11 @@ body {
     -o-border-radius: 30px;
 }
 
+.btn3 {
+    background: var(--white);
+    color: var(--black);
+}
+
 .hero-title {
     hr {
         max-width: 240px;
@@ -254,3 +259,84 @@ body {
     font-weight: 500;
     padding: 1rem 0;
 }
+
+/* price area  */
+.price-area {
+    padding-bottom: 5rem;
+}
+
+.price-item {
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.15);
+    height: 417px;
+    transition: .5s;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.price-item h4 {
+    color: var(--black);
+    font-weight: 900;
+}
+
+.price-item h3 {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.price-item:hover {
+    background: var(--black);
+}
+
+.price-item:hover h4,
+.price-item:hover h3,
+.price-item:hover p {
+    color: var(--white)
+}
+
+.price-item.active {
+    background: var(--black);
+}
+
+.price-item.active h4,
+.price-item.active h3,
+.price-item.active p {
+    color: var(--white);
+}
+
+.price-item.active .btn1 {
+    background: var(--white);
+    color: var(--black)
+}
+
+.price-item.active:hover {
+    background: var(--white);
+}
+
+.price-item.active:hover h4,
+.price-item.active:hover h3,
+.price-item.active:hover p {
+    color: var(--black)
+}
+
+.price-item.active:hover .btn1 {
+    background: var(--orange);
+    color: var(--white)
+}
+
+/* .price-item p.cus-padding2 {
+    padding: 1.6rem 0;
+}
+
+.price-item p.cus-padding {
+    padding: 1.6rem 0;
+} */
