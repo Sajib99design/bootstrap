@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@font-face {
+    font-family: 'NexaBold';
+    src: url('./font/NexaBold.woff') format('woff'),
+        url('/font/NexaBold.ttf') format('truetype');
+    font-weight: 900;
+    unicode-range: U+20AC;
+}
+
+@font-face {
+    font-family: 'Nexanormal';
+    src: url('/font/Nexanormal.ttf') format('truetype');
+    font-weight: 600;
+    unicode-range: U+20AC;
+}
+
 
 :root {
     --gray: #222222;
@@ -9,7 +24,8 @@
     --black2: #333;
     --orange: #FE8C45;
     --white: #FFF;
-    --second: "Quicksand", sans-serif;
+    --second: 'NexaBold', sans-serif;
+    --secondNormal: "NexaNormal", sans-serif;
 }
 
 * {
@@ -81,6 +97,7 @@ body {
         font-size: 4.625rem;
         font-weight: 900;
         color: var(--black);
+        font-family: var(--second);
 
         span {
             color: var(--blue);
@@ -112,7 +129,7 @@ body {
 
 .title {
     color: var(--black);
-    font-family: var(--second);
+    font-family: 'NexaBold', Arial, sans-serif;
     font-size: 3rem;
     font-weight: 900;
     padding: 1.6rem 0;
@@ -268,6 +285,20 @@ body {
 /* price area  */
 .price-area {
     padding-bottom: 5rem;
+    position: relative;
+}
+
+.price-area:after {
+    content: "";
+    width: 26%;
+    height: 451px;
+    background: url(img/yellow.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: 2%;
+    bottom: -214px;
+    z-index: 111;
 }
 
 .price-item {
@@ -286,15 +317,18 @@ body {
     -o-transition: .5s;
 }
 
-.price-item h4 {
-    color: var(--black);
-    font-weight: 900;
-}
 
 .price-item h3 {
     color: var(--black);
-    font-size: 3rem;
     font-weight: 900;
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+
+.price-item h4 {
+    color: var(--black);
+    font-weight: 900;
+    font-family: var(--second);
 }
 
 
@@ -368,6 +402,22 @@ body {
 /* question area  */
 .que-area {
     padding-bottom: 10rem;
+    background: url(img/queback2.png) no-repeat;
+    background-position: 116% 580px;
+    background-size: 38%;
+    position: relative;
+}
+
+.que-area:before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: url(img/queback2.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: -175px;
+    left: -125px;
 }
 
 .que-text {
@@ -411,4 +461,3 @@ body {
     padding: 2.375rem;
     background: #222222;
 }
-
