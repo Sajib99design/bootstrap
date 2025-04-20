@@ -256,4 +256,8 @@
 	.price-item p {
 		padding: 0 !important;
 	}
+
+	.testimonial-area {
+		padding: 2.5rem 0;
+	}
 }

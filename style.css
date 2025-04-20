@@ -133,12 +133,12 @@ body {
     height: 533px;
 }
 
+/* instragram-area  */
 
 .instragram-area {
-    padding: 0rem 0 3.75rem;
+    padding: 130px 0;
 }
 
-/* instragram-area  */
 .instragram-area img {
     width: 100%;
 }
