@@ -19,7 +19,6 @@
 :root {
     --gray: #222222;
     --blue: #8A47F6;
-    --blue2: #8A47F6;
     --black: #111;
     --black2: #333;
     --orange: #FE8C45;
@@ -59,6 +58,17 @@ body {
     text-decoration: none;
     background: var(--orange);
     color: var(--white);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.btn1:hover {
+    background: var(--white);
+    color: var(--black);
+    outline: 2px solid var(--orange);
 }
 
 .btn2 {
@@ -175,7 +185,6 @@ body {
 }
 
 /* portfolio-gallery area  */
-
 .portfolio-area {
     padding: 2.5rem 0 8rem;
     position: relative;
@@ -220,6 +229,7 @@ body {
     gap: 1.5rem;
 }
 
+
 .portfolio-gallery img {
     width: 100%;
     object-fit: cover;
@@ -228,6 +238,24 @@ body {
     -moz-border-radius: 1.25rem;
     -ms-border-radius: 1.25rem;
     -o-border-radius: 1.25rem;
+}
+
+.portfolio-gallery .portfolio-img {
+    border-radius: 30px;
+    transition: .5s;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.portfolio-gallery .portfolio-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 5px 11px 2px #80808040;
 }
 
 .portfolio-gallery .portfolio-img:nth-child(1) {
