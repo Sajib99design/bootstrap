@@ -228,6 +228,7 @@
 
 	.portfolio-gallery .portfolio-img {
 		height: 250px;
+		grid-column: auto / span 2;
 	}
 
 	.portfolio-gallery img {
